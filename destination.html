@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
     <!-- complied javacript including popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- coustom css file link -->
     <link rel="stylesheet" href="css/style.css">
@@ -20,12 +20,12 @@
 
 <!-- header starts here -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent jumpover">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-success jumpover">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html"><img src="./images/logo.png" class="logo img-fluid" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <Explore class="navbar-toggler" type="Explore" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </Explore>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
@@ -33,255 +33,274 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="./destination.html">Destinations</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Experience Kerala
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="./log.html">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./login.html">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./signup.html">Signup</a>
+          <a class="nav-link" href="./signin.html">Signup</a>
         </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <Explore class="btn btn-outline-light" type="submit">Search</Explore>
       </form>
     </div>
   </div>
 </nav>
 
 <!-- header ends here -->
+<div class="container-fluid bg-success bg-opacity-25">
+<div class="display-3 text-center">
+  <p>God’s Own Country! KERALA</p>
+</div>
+<div class="kerala " style="padding-right: 80px;padding-left: 80px;padding-top: 20px;padding-bottom: 20px; justify-content: left;">
+  <p>Kerala – a divine state in the southern part of India is a home to numerous natural marvels. Embraced by the alluring charm of the silent backwaters, the captivating beauty of the blue lagoons, the charm of the evergreen coconut groves, a bewitching list of tourist destinations, this state is also revered as the “God’s Own Country”!. Whether you are an adventure freak, a leisure seeker, planning for your honeymoon, travelling with family and friends, or yearning for a solo backpacking trip to offbeat destinations, you can always plan a Kerala trip and satiate all your yearnings.</p>
+</div>
+</div>
 
 <!-- card creation start -->
-<div class="container">
-<div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12">
+
+<div class="container-fluid destination2 ">
+  <div class="display-1 text-center">
+    DESTINATIONS
+  </div>
+<div class="row justify-content-center">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/TVM/Varkala Cliff.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Thiruvananthapuram</h5>
+              <p class="card-text">Located in the southwestern tip of India, Thiruvananthapuram is bound by the Arabian Sea in the west and Tamil Nadu in the east.
+
+              </p>
+              <a href="./trivandrum.html" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
-              <a href="#!">
+              <img src="./images/Kollam/Jadayu Para.jpg" class="img-fluid"/>
+              <a href="./kollam.html">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Kollam</h5>
+              <p class="card-text">Kollam is famous as a city with export background.Kollam district ranks first in livestock wealth in the state. </p>
+              <a href="./kollam.html" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Pathanamthitta/Vallamkali.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Pathanamthitta</h5>
+              <p class="card-text">Pathanamthitta is a prominent tourist for famous city with export its boat races, religious and the cultural training
+                centre.
+                
+                </p>
+              <a href="./Pathanamthitta.html" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Alappuzha/wp7877187-alappuzha-wallpapers.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Alleppey</h5>
+              <p class="card-text">Alappuzha (Alleppey) is known as ‘the Venice of the East’,this Kerala’s backwaters and is home to a thousand houseboats.
+
+              </p>
+              <a href="./Alleppey.html" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Kottayam/Kumarakom.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Kottayam</h5>
+              <p class="card-text">Kottayam district is famous for its rich heritage and literary tradition. It is renowned for its spice and rubber
+                trade.</p>
+              <a href="./Kottayam.html" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Idukki/Eravikulam National Park.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Idukki</h5>
+              <p class="card-text">A landlocked district, Idukki is one of the most areas of Kerala. High ranges and wooded valleys are girded by rivers.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Ernakulam/Edapally Church.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Ernakulam</h5>
+              <p class="card-text">Ernakulam, the urbane face of Kochi,
+                is a bustling place with crowded shopping malls, restaurants and high-rises.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Thrissur/Athirapally Waterfalls.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Thrissur</h5>
+              <p class="card-text">Thrissur is one of those rare cities that offer peace in the a he might be looking for when choosing a holiday destination.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Palakkad/Palakkad Western Ghats.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Palakkad</h5>
+              <p class="card-text">The diverse variety of flora and fauna make the place an attractive spot for wildlife enthusiasts and nature
+                lovers.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Wayanad/Pookode lake.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Wayanad</h5>
+              <p class="card-text">Loaded with charming waterfalls, caves, resorts, Wayanad tourism is known for its zest ranches and natural life.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Malappuram/Kodikuthimala.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Malappuram</h5>
+              <p class="card-text">A famous centre for Hindu-Vedic learning philosophy, the temples and mosques of this region are well known for their festivals.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Kozhikode/kozhikode-beach.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Calicut</h5>
+              <p class="card-text">Lush green countryside, serene beaches, historic sites, wildlife sanctuaries, rivers and hills make Calicut a popular destination.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Kannur/muzhappilangad beach.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Kannur</h5>
+              <p class="card-text">Land of looms and toys.. This historic area of ​​Kerala has many attractions, including beaches, temples, hills, and other monuments.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card my-4 mx-4">
             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+              <img src="./images/Kasaragod/Bekal kotta4.jpg" class="img-fluid"/>
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#!" class="btn btn-primary">Button</a>
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title text-center">Kasaragod</h5>
+              <p class="card-text">Majestic hills, pristine beaches, quiet backwaters, rich cultural heritage and unique art forms and festivals make Kasaragod a compelling tourism spot.</p>
+              <a href="#!" class="btn btn-success">Explore</a>
             </div>
           </div> 
     </div>
 </div>
 </div>
-
-
-
-
-
 <!-- card creation start -->
+
+
+
+<!--footer start -->
+<footer class="bg-success bg-opacity-75 text-dark  text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © Kerala Tourism:
+    <a class="text-dark" href="./index.html">keralatourism.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--footer end -->
 </body>
 </html>
