@@ -32,3 +32,7 @@ background-size: contain;
     /* .login{
         margin-top: 5%;
     } */
+.templates img{
+width:100%;
+height:100%;
+}
