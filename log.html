@@ -51,7 +51,7 @@
 <div class="conatainer" style="  background-image: url('https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
 background-repeat: repeat-y;
 background-size: cover;">
-    <div class="container h-100" >
+    <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-10 col-xl-10">
           <div class="card text-black" style="border-radius: 25px;">
@@ -61,39 +61,45 @@ background-size: cover;">
   
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
   
-                  <form class="mx-1 mx-md-4">
+                  <form class="mx-1 mx-md-4" id="form">
   
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="form3Example1c" class="form-control" />
-                        <label class="form-label" for="form3Example1c">enter your username</label>
+                      <div class="form-outline flex-fill mb-0 formbox">
+                        <label class="form-label mb-0" style="font-weight: 500;" for="email">Email</label>
+                        <input type="text" id="email" placeholder="enter your email" class="form-control" />
+                        <small>Error Message</small>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
                       </div>
                     </div>
   
                     
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4c" class="form-control" />
-                        <label class="form-label" for="form3Example4c">Password</label>
-                      </div>
+                      <div class="form-outline flex-fill mb-0 formbox">
+                        <label class="form-label mb-0" style="font-weight: 500;" for="password">Password</label>
+                        <input type="password" id="password" placeholder="enter your Password" class="form-control" />
+                        <small>Error Message</small>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                     </div>
                     </div>
   
                    
                    
                      
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="button" class="btn btn-success btn-lg">Login</button>
+                      <button type="submit" class="btn btn-success btn-lg">Login</button>
                     </div>
                     <div class="text-center pt-1 mb-5 pb-1">
                  
-                      <a class=" fs-5 mx-1 text-decoration-none" href="#!">Forgot password?</a>
+                      <a class=" fs-5 mx-1 text-decoration-none" href="#!" style="color: green;" >Forgot password?</a>
                     </div>
                     <div class=" d-flex align-items-center justify-content-center pb-4">
-                      <p class="mb-0 col-lg-6 me-2">Don't have an account?</p>
-                     <div class="col-6">
-                      <a href="./signin.html"button type="button" class="btn btn-outline-success">Create new</a>
+                      <p class="mb-0 col-lg-10">Don't have an account?</p>
+                     <div class="col-lg-6">
+                      <a href="./signin.html" style="color: green; font-size:large;" >Create new</a>
                     </div>
                     </div>
   
@@ -125,5 +131,6 @@ background-size: cover;">
   </footer>
   <!--footer end -->
     
+  <script src="./emailvalidation.js"></script>
 </body>
 </html>
