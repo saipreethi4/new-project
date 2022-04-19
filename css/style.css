@@ -73,16 +73,6 @@ height:100%;
     visibility: visible;
     color: red;
 }
-.formbox.success i.fa-check-circle{
-    visibility:visible ;
-    color: #2ecc71;
-    
-}
-
-.formbox.error i.fa-exclamation-circle{
-    visibility:visible ;
-    color: red;
-}
 .formbox.success small{
     visibility: visible;
     color: #2ecc71;
@@ -91,4 +81,97 @@ height:100%;
     visibility: visible;
     color: red;
 }
+/* .box{
+    position: relative;
+    
+} */
 
+/* .box i{
+    position:absolute ;
+    top: 36px;
+    right: 10px;
+    visibility:hidden;
+} */
+.err{
+    color: red;
+    font-size: smaller;
+}
+
+/* .box #correct i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+.box #wrong i.fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+} */
+
+.field{
+    position: relative;
+}
+.field .showBtn{
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    font-size: small;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+.field .indicator{
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none ;
+}
+.field .indicator span{
+    position: relative;
+  height: 100%;
+  width: 100%;
+  background: lightgrey;
+display: flex;
+  border-radius: 5px;
+}
+.field .indicator span.medium{
+    margin: 0 3px;
+}
+form .indicator span:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .indicator span.active.weak:before{
+    background-color: #ff4757;
+  }
+  .indicator span.active.medium:before{
+    background-color: orange;
+  }
+  .indicator span.active.strong:before{
+    background-color: #23ad5c;
+  }
+  .field .msg{
+      display: flex;
+     align-items: center;
+     font-size:15px;
+     font-weight: 500;
+     display: none;
+    margin-bottom: -10px;
+    
+  }
+  .field .msg.weak{
+    color: #ff4757;
+  }
+  .field .msg.medium{
+    color: orange;
+  }
+ .field .msg.strong{
+    color: #23ad5c;
+  }

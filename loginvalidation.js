@@ -4,8 +4,9 @@ const password= document.getElementById('password');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
+    
     validateInputs();
+
 });
 
 const validateInputs = () => {
@@ -18,7 +19,7 @@ const validateInputs = () => {
         setError(email, 'Provide a valid email address');
     } else {
         setSuccess(email);
-            }
+                            }
 
     
 if(passwordValue === '') {
@@ -28,7 +29,7 @@ if(passwordValue === '') {
 } else {
     setSuccess(password);
 }
-
+// document.getElementById("form").reset(); 
 }
 
 
@@ -48,7 +49,8 @@ const setSuccess = element => {
     errorDisplay.innerText = '';
     formbox.classList.add('success');
     formbox.classList.remove('error');
-};
+   
+    };
 
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
