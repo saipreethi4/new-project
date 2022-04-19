@@ -92,14 +92,17 @@ function trigger(){
         msg.style.display = "block";
         msg.textContent = "Your password is too weak";
         msg.classList.add("weak");
+        password1.style.borderColor="red";
       }
       if(no == 2){
         medium.classList.add("active");
         msg.textContent = "Your password is medium";
         msg.classList.add("medium");
+        password1.style.borderColor="red";
       }else{
         medium.classList.remove("active");
         msg.classList.remove("medium");
+        password1.style.borderColor="red";
       }
       if(no == 3){
         weak.classList.add("active");
