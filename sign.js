@@ -74,7 +74,7 @@ function pass1(){
         password1Err.textContent="Please enter your password";
     }else if(no == 4){
         password1.style.borderColor="#2ecc71";
-       password1Err.style.display="none";
+        password1Err.style.display="none";
     }
 }
 
@@ -137,7 +137,12 @@ function pass2(){
 if(password2.value.length===0){
     password2.style.borderColor="red";
     password2Err.textContent="Please enter password again";
-}else if (password1.value === password2.value){
+}else if ((password1.value !== password2.value) || (no!=4)){
+    password1.style.borderColor="red";
+    password2.style.borderColor="red";
+    password2Err.textContent="password isn't matched";
+}
+else{
     password2.style.borderColor="#2ecc71";
     password2Err.style.display="none";
 }
