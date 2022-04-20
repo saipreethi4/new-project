@@ -88,7 +88,7 @@ function pass1(){
         password1.style.borderColor="red";
         password1Err.textContent="Please enter your password";
         pd1flag=false;
-    }else if(no == 4){
+    }else if(/^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$/.test(password1.value)){
         password1.style.borderColor="#2ecc71";
         password1Err.style.display="none";
         pd1flag=true;

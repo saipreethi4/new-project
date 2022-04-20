@@ -30,8 +30,8 @@ const emailValue = email.value.trim();
   
 function pwdVal(){
     const passwordValue = password.value.trim();
-let rs = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-    
+// let rs = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}(\W?)$/;
+    let rs=/^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$/;
 if(passwordValue === '') {
     setError(password, 'Password is required');
     passcheck=false;
