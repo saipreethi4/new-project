@@ -67,7 +67,7 @@ background-size: cover;">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0 formbox">
                         <label class="form-label mb-0" style="font-weight: 500;" for="email">Email</label>
-                        <input type="text" id="email" placeholder="enter your email" class="form-control" />
+                        <input type="text" id="email" onblur="mailVal()" placeholder="enter your email" class="form-control" />
                         <small>Error Message</small>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
@@ -79,7 +79,7 @@ background-size: cover;">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0 formbox">
                         <label class="form-label mb-0" style="font-weight: 500;" for="password">Password</label>
-                        <input type="password" id="password" placeholder="enter your Password" class="form-control" />
+                        <input type="password" id="password" onblur="pwdVal()" placeholder="enter your Password" class="form-control" />
                         <small>Error Message</small>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
@@ -90,7 +90,7 @@ background-size: cover;">
                    
                      
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="submit" class="btn btn-success btn-lg">Login</button>
+                      <button type="button" onclick="fullVal()" class="btn btn-success btn-lg">Login</button>
                     </div>
                     <div class="text-center pt-1 mb-5 pb-1">
                  
@@ -129,6 +129,6 @@ background-size: cover;">
   </footer>
   <!--footer end -->
     
-  <script src="./loginvalidation.js"></script>
+  <script src="./login.js"></script>
 </body>
 </html>
