@@ -102,7 +102,7 @@ function trigger(){
       indicator.style.display = "flex";
       password1Err.style.display="none";
       if(pwd1.value.length <= 3 && (pwd1.value.match(regExpWeak) || pwd1.value.match(regExpMedium) || pwd1.value.match(regExpStrong)))no=1;
-      if(pwd1.value.length >= 8 && ((pwd1.value.match(regExpWeak) && pwd1.value.match(regExpMedium)) || (pwd1.value.match(regExpMedium) && pwd1.value.match(regExpStrong)) || (pwd1.value.match(regExpWeak) && pwd1.value.match(regExpStrong))))no=2;
+      if(pwd1.value.length >= 6 && ((pwd1.value.match(regExpWeak) && pwd1.value.match(regExpMedium)) || (pwd1.value.match(regExpMedium) && pwd1.value.match(regExpStrong)) || (pwd1.value.match(regExpWeak) && pwd1.value.match(regExpStrong))))no=2;
       if(pwd1.value.length >= 8 && pwd1.value.match(regExpWeak) && pwd1.value.match(regExpMedium) && pwd1.value.match(regExpStrong))no=3;
       if(no == 1){
         weak.classList.add("active");
